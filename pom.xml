@@ -43,6 +43,12 @@
 			<artifactId>ashot</artifactId>
 			<version>1.5.4</version>
 		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.1.0</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -66,6 +72,12 @@
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.22.1</version>
+					<configuration>
+<suiteXmlFiles>
+<suiteXmlFile>F:\Eclipse WrokSpace\automation1\src\test\java\com\utility\testng.xml </suiteXmlFile>
+
+ </suiteXmlFiles>
+</configuration>
 				</plugin>
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
